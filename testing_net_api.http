@@ -1,6 +1,34 @@
-@testing_net_api_HostAddress = http://localhost:5096
+@rootUrl = http://localhost:5096
 
-GET {{testing_net_api_HostAddress}}/weatherforecast/
+GET {{rootUrl}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{rootUrl}}/api/books
+Accept: application/json
+
+###
+
+GET {{rootUrl}}/api/books/4
+Accept: application/json
+
+###
+POST {{rootUrl}}/api/books
+Content-Type: application/json
+{
+    "id": 4,
+    "title": "Game Of Throne",
+    "author": "George R. R. Martin",
+    "yearPblished": 1998
+}
+
+###
+PUT {{rootUrl}}/api/books/4
+Content-Type: application/json
+{
+    "id": 4,
+    "title": "Game Of Throne 2",
+    "author": "George R. R. Martin",
+    "yearPblished": 1999
+}
