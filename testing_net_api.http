@@ -10,25 +10,28 @@ Accept: application/json
 
 ###
 
-GET {{rootUrl}}/api/books/4
+GET {{rootUrl}}/api/books/1
 Accept: application/json
 
 ###
 POST {{rootUrl}}/api/books
 Content-Type: application/json
 {
-    "id": 4,
     "title": "Game Of Throne",
     "author": "George R. R. Martin",
     "yearPblished": 1998
 }
 
 ###
-PUT {{rootUrl}}/api/books/4
+PUT {{rootUrl}}/api/books/3
 Content-Type: application/json
 {
-    "id": 4,
+    "id": 3,
     "title": "Game Of Throne 2",
     "author": "George R. R. Martin",
     "yearPblished": 1999
 }
+
+###
+DELETE {{rootUrl}}/api/books/3
+Content-Type: application/json

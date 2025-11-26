@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using testing_net_api.Models;
 
 namespace testing_net_api.Controllers
 {
